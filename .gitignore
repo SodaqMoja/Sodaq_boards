@@ -3,3 +3,7 @@
 *.zip
 .DS_Store
 *.bak
+
+# Skip generated tar files
+*.tar.gz
+*.tar.bz2
