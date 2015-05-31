@@ -1,0 +1,45 @@
+{
+   "packages":[
+      {
+         "name":"SODAQ",
+         "maintainer":"SODAQ",
+         "websiteURL":"https://sodaq.com",
+         "email":"info@sodaq.com",
+         "help":{
+            "online":"https://forum.sodaq.com"
+         },
+         "platforms":[
+            {
+               "name":"SODAQ AVR Boards",
+               "architecture":"avr",
+               "version":"1.0.0",
+               "category":"Contributed",
+               "url":"http://downloads.sodaq.net/sodaqboards-1.0.0.tar.bz2",
+               "archiveFileName":"sodaqboards-1.0.0.tar.bz2",
+               "checksum":"SHA-256:12868e320717f2778b5f354fe2e3ba323965e07dd22294684acda3d1bd8de0c4",
+               "size":"5424",
+               "help":{
+                  "online":"https://forums.sodaq.com"
+               },
+               "boards":[
+                  { "name":"SODAQ Mbili" },
+                  { "name":"SODAQ Ndogo" },
+                  { "name":"SODAQ Tatu" }
+               ],
+               "toolsDependencies":[
+                  {
+                     "packager":"arduino",
+                     "name":"avr-gcc",
+                     "version":"4.8.1-arduino5"
+                  },
+                  {
+                     "packager":"arduino",
+                     "name":"avrdude",
+                     "version":"6.0.1-arduino5"
+                  }
+               ]
+            }
+         ]
+      }
+   ]
+}
