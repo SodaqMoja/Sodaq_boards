@@ -5,21 +5,21 @@
 
 VER=1.0.0
 TARFILE=sodaqboards-${VER}.tar.bz2
-tar cjf ${TARFILE} $(git ls-files ${VER})
+tar -cjf ${TARFILE} -C avr $(cd avr && git ls-files ${VER})
 CRC=$(sha256sum ${TARFILE}  | awk '{print $1}')
 echo "\"checksum\":\"SHA-256:${CRC}\""
 echo "\"size\":\"$(cat ${TARFILE} | wc -c)\""
 
 VER=1.0.1
 TARFILE=sodaqboards-${VER}.tar.bz2
-tar cjf ${TARFILE} $(git ls-files ${VER})
+tar -cjf ${TARFILE} -C avr $(cd avr && git ls-files ${VER})
 CRC=$(sha256sum ${TARFILE}  | awk '{print $1}')
 echo "\"checksum\":\"SHA-256:${CRC}\""
 echo "\"size\":\"$(cat ${TARFILE} | wc -c)\""
 
 VER=1.6.0
 TARFILE=sodaqsamdboards-${VER}.tar.bz2
-tar cjf ${TARFILE} $(git ls-files ${VER})
+tar -cjf ${TARFILE} -C samd $(cd samd && git ls-files ${VER})
 CRC=$(sha256sum ${TARFILE}  | awk '{print $1}')
 echo "\"checksum\":\"SHA-256:${CRC}\""
 echo "\"size\":\"$(cat ${TARFILE} | wc -c)\""
