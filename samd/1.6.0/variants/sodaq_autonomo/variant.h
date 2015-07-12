@@ -77,24 +77,20 @@ extern "C"
 
 // LEDs
 #define PIN_LED_13           (13u)
-#define PIN_LED_RXL          (25u)
-#define PIN_LED_TXL          (26u)
 #define PIN_LED              PIN_LED_13
-#define PIN_LED2             PIN_LED_RXL
-#define PIN_LED3             PIN_LED_TXL
 #define LED_BUILTIN          PIN_LED_13
 
 /*
  * Analog pins
  */
 #define PIN_A0               (16ul)
-#define PIN_A1               (17ul)
-#define PIN_A2               (18ul)
-#define PIN_A3               (19ul)
-#define PIN_A4               (20ul)
-#define PIN_A5               (21ul)
-#define PIN_A6               (22ul)
-#define PIN_A7               (23ul)
+#define PIN_A1               (PIN_A0 + 1)
+#define PIN_A2               (PIN_A0 + 2)
+#define PIN_A3               (PIN_A0 + 3)
+#define PIN_A4               (PIN_A0 + 4)
+#define PIN_A5               (PIN_A0 + 5)
+#define PIN_A6               (PIN_A0 + 6)
+#define PIN_A7               (PIN_A0 + 7)
 
 static const uint8_t A0  = PIN_A0 ;
 static const uint8_t A1  = PIN_A1 ;
@@ -118,8 +114,8 @@ static const uint8_t A7  = PIN_A7 ;
 // Serial1
 #define PIN_SERIAL1_RX       (32ul)
 #define PIN_SERIAL1_TX       (33ul)
-#define PAD_SERIAL1_TX       (UART_TX_PAD_1)
-#define PAD_SERIAL1_RX       (SERCOM_RX_PAD_0)
+#define PAD_SERIAL1_TX       (UART_TX_PAD_0)
+#define PAD_SERIAL1_RX       (SERCOM_RX_PAD_1)
 
 /*
  * SPI Interfaces

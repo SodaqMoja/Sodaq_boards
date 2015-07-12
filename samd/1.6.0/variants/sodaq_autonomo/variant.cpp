@@ -59,20 +59,20 @@ const PinDescription g_APinDescription[]=
   { PORTA, 19, PIO_TIMER_ALT,  (PIN_ATTR_DIGITAL|PIN_ATTR_PWM|PIN_ATTR_TIMER), No_ADC_Channel, PWM0_CH3,   TCC0_CH3,     EXTERNAL_INT_3  }, // TCC0/WO[3]
   { PORTB, 16},
 
-  // 16..23 ?? A0..
-  { PORTA,  7}, // A0
-  { PORTA,  6}, // A1
-  { PORTA,  5, PIO_ANALOG,     PIN_ATTR_ANALOG,                                ADC_Channel5,   NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_5  }, // ADC/AIN[5]
-  { PORTA,  4, PIO_ANALOG,     PIN_ATTR_ANALOG,                                ADC_Channel4,   NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_4  }, // ADC/AIN[4]
-  { PORTB,  9, PIO_ANALOG,     PIN_ATTR_ANALOG,                                ADC_Channel3,   NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_9  }, // ADC/AIN[3]
-  { PORTB,  8, PIO_ANALOG,     PIN_ATTR_ANALOG,                                ADC_Channel2,   NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_8  }, // ADC/AIN[2]
-  { PORTB,  7, PIO_ANALOG,     PIN_ATTR_ANALOG},
-  { PORTB,  6, PIO_ANALOG,     PIN_ATTR_ANALOG},
+  // 16..23 A0..A7
+  { PORTA,  7, PIO_ANALOG,     PIN_ATTR_ANALOG,                                ADC_Channel7,   NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_7  }, // ADC/AIN[7], A0
+  { PORTA,  6, PIO_ANALOG,     PIN_ATTR_ANALOG,                                ADC_Channel6,   NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_6  }, // ADC/AIN[6], A1
+  { PORTA,  5, PIO_ANALOG,     PIN_ATTR_ANALOG,                                ADC_Channel5,   NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_5  }, // ADC/AIN[5], A2
+  { PORTA,  4, PIO_ANALOG,     PIN_ATTR_ANALOG,                                ADC_Channel4,   NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_4  }, // ADC/AIN[4], A3
+  { PORTB,  9, PIO_ANALOG,     PIN_ATTR_ANALOG,                                ADC_Channel3,   NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_9  }, // ADC/AIN[3], A4
+  { PORTB,  8, PIO_ANALOG,     PIN_ATTR_ANALOG,                                ADC_Channel2,   NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_8  }, // ADC/AIN[2], A5
+  { PORTB,  7, PIO_ANALOG,     PIN_ATTR_ANALOG,                                ADC_Channel15,  NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_7  }, // ADC/AIN[15], A6
+  { PORTB,  6, PIO_ANALOG,     PIN_ATTR_ANALOG,                                ADC_Channel14,  NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_6  }, // ADC/AIN[14], A7
 
-  // 24..31 ?? A8..A15
+  // 24..31 A8..A15
   { PORTB,  5, PIO_ANALOG,     PIN_ATTR_ANALOG}, // A8
   { PORTB,  4, PIO_ANALOG,     PIN_ATTR_ANALOG}, // A9
-  { PORTA,  2, PIO_ANALOG,     PIN_ATTR_ANALOG}, // A10
+  { PORTA,  2, PIO_ANALOG,     PIN_ATTR_ANALOG,                                ADC_Channel0,   NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_2 }, // ADC/AIN[0], A10
   { PORTB,  3, PIO_ANALOG,     PIN_ATTR_ANALOG}, // A11
   { PORTB,  2, PIO_ANALOG,     PIN_ATTR_ANALOG}, // A12
   { PORTB,  1, PIO_ANALOG,     PIN_ATTR_ANALOG}, // A13
