@@ -50,9 +50,9 @@ extern "C"
  *----------------------------------------------------------------------------*/
 
 // Number of pins defined in PinDescription array
-#define PINS_COUNT           (26u)
-#define NUM_DIGITAL_PINS     (14u)
-#define NUM_ANALOG_INPUTS    (6u)
+//#define PINS_COUNT           (26u)
+#define NUM_DIGITAL_PINS     (16u)
+#define NUM_ANALOG_INPUTS    (15u)
 #define NUM_ANALOG_OUTPUTS   (1u)
 
 #define digitalPinToPort(P)        ( &(PORT->Group[g_APinDescription[P].ulPort]) )
