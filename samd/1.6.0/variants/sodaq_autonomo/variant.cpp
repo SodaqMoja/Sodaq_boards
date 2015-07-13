@@ -86,11 +86,13 @@ const PinDescription g_APinDescription[]=
   { PORTA, 12, PIO_SERCOM,     PIN_ATTR_DIGITAL,                               No_ADC_Channel, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_12 }, // SDA: SERCOM2/PAD[0]
   { PORTA, 13, PIO_SERCOM,     PIN_ATTR_DIGITAL,                               No_ADC_Channel, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_13 }, // SCL: SERCOM2/PAD[1]
 
-  // 36..39 - SPI pins (ICSP:MISO,SCK,MOSI)
-  { PORTA, 23}, // SS (dataflash AT45DB161E)
-  { PORTA, 22}, // MISO
-  { PORTA, 21}, // SCK
-  { PORTA, 20}, // MOSI
+  // 36 - SS (dataflash AT45DB161E)
+  { PORTA, 23, PIO_SERCOM,     PIN_ATTR_DIGITAL,                               No_ADC_Channel, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_7  }, // SS: SERCOM3/PAD[1]},
+
+  // 37..39 - SPI pins (ICSP:MISO,SCK,MOSI)
+  { PORTA, 22, PIO_SERCOM,     PIN_ATTR_DIGITAL,                               No_ADC_Channel, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_6  }, // MISO: SERCOM3/PAD[0]
+  { PORTA, 21, PIO_SERCOM_ALT, PIN_ATTR_DIGITAL,                               No_ADC_Channel, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_5  }, // SCK: SERCOM3/PAD[3]
+  { PORTA, 20, PIO_SERCOM_ALT, PIN_ATTR_DIGITAL,                               No_ADC_Channel, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_4  }, // MOSI: SERCOM3/PAD[2]
 
   // 40
   { PORTA, 27}, // SS_2 (SDCARD)
