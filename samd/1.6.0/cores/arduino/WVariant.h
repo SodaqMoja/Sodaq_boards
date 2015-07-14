@@ -70,11 +70,17 @@ typedef enum _ETCChannel
   TCC2_CH1 = (2<<8)|(1),
   TC3_CH0  = (3<<8)|(0),
   TC3_CH1  = (3<<8)|(1),
+#if defined __SAMD21J18A__
+  TC4_CH0  = (4<<8)|(0),
+  TC4_CH1  = (4<<8)|(1),
+#endif // __SAMD21J18A__
   TC5_CH0  = (5<<8)|(0),
   TC5_CH1  = (5<<8)|(1),
 #if defined __SAMD21J18A__
+  TC6_CH0  = (6<<8)|(0),
+  TC6_CH1  = (6<<8)|(1),
   TC7_CH0  = (7<<8)|(0),
-  TC7_CH1  = (7<<8)|(1)
+  TC7_CH1  = (7<<8)|(1),
 #endif // __SAMD21J18A__
 } ETCChannel ;
 

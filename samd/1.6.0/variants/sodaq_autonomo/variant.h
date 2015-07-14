@@ -50,9 +50,9 @@ extern "C"
  *----------------------------------------------------------------------------*/
 
 // Number of pins defined in PinDescription array
-#define PINS_COUNT           (26u)
-#define NUM_DIGITAL_PINS     (14u)
-#define NUM_ANALOG_INPUTS    (6u)
+//#define PINS_COUNT           (26u)
+#define NUM_DIGITAL_PINS     (16u)
+#define NUM_ANALOG_INPUTS    (15u)
 #define NUM_ANALOG_OUTPUTS   (1u)
 
 #define digitalPinToPort(P)        ( &(PORT->Group[g_APinDescription[P].ulPort]) )
@@ -122,11 +122,12 @@ static const uint8_t A7  = PIN_A7 ;
  */
 #define SPI_INTERFACES_COUNT 1
 
-#define PIN_SPI_MISO         (22u)
-#define PIN_SPI_MOSI         (23u)
-#define PIN_SPI_SCK          (24u)
+#define PIN_SPI_SS           (36u)
+#define PIN_SPI_MISO         (37u)
+#define PIN_SPI_MOSI         (39u)
+#define PIN_SPI_SCK          (38u)
 
-static const uint8_t SS	  = PIN_A2 ;	// SERCOM4 last PAD is present on A2 but HW SS isn't used. Set here only for reference.
+static const uint8_t SS	  = PIN_SPI_SS ;
 static const uint8_t MOSI = PIN_SPI_MOSI ;
 static const uint8_t MISO = PIN_SPI_MISO ;
 static const uint8_t SCK  = PIN_SPI_SCK ;
