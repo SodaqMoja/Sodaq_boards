@@ -158,7 +158,6 @@ static const uint8_t SS_2 = (20u);
 /*
  * USB
  */
-#define PIN_USB_HOST_ENABLE (49ul) // Defined as not a pin
 #define PIN_USB_DM          (47ul)
 #define PIN_USB_DP          (48ul)
 

@@ -105,7 +105,6 @@ const PinDescription g_APinDescription[]=
   // 47..49 - USB
   { PORTA, 24, PIO_COM,        PIN_ATTR_NONE,                                     No_ADC_Channel, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_NONE }, // USB/DM
   { PORTA, 25, PIO_COM,        PIN_ATTR_NONE,                                     No_ADC_Channel, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_NONE }, // USB/DP
-  { NOT_A_PORT, 0, PIO_NOT_A_PIN, PIN_ATTR_NONE,                                  No_ADC_Channel, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_NONE }, // USB Host enable 
 } ;
 
 const void* g_apTCInstances[TCC_INST_NUM+TC_INST_NUM]={ TCC0, TCC1, TCC2, TC3, TC4, TC5, TC6, TC7 } ;
