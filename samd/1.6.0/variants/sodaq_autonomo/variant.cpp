@@ -63,7 +63,7 @@ const PinDescription g_APinDescription[]=
   { PORTB, 22, PIO_OUTPUT,     (PIN_ATTR_DIGITAL),                                 No_ADC_Channel, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_NONE }, // DTR
   { PORTB, 23, PIO_DIGITAL,    (PIN_ATTR_DIGITAL),                                 No_ADC_Channel, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_NONE }, // CTS
   { PORTA, 27, PIO_OUTPUT,     (PIN_ATTR_DIGITAL),                                 No_ADC_Channel, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_NONE }, // SS_2 (SD)
-  { PORTB, 17, PIO_DIGITAL,    (PIN_ATTR_DIGITAL),                                 No_ADC_Channel, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_17   }, // RI/AS
+  { PORTB, 17, PIO_DIGITAL,    (PIN_ATTR_DIGITAL),                                 No_ADC_Channel, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_1    }, // RI/AS
 
   // 22..35 A0..A13
   { PORTA,  7, PIO_ANALOG,     PIN_ATTR_ANALOG,                                    ADC_Channel7,   NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_7  }, // ADC/AIN[7], A0
