@@ -102,9 +102,10 @@ const PinDescription g_APinDescription[]=
   { PORTA, 21, PIO_SERCOM_ALT, PIN_ATTR_DIGITAL,                                  No_ADC_Channel, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_5  }, // SCK: SERCOM3/PAD[3]
   { PORTA, 20, PIO_SERCOM_ALT, PIN_ATTR_DIGITAL,                                  No_ADC_Channel, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_4  }, // MOSI: SERCOM3/PAD[2]
 
-  // 47..48 - USB
+  // 47..49 - USB
   { PORTA, 24, PIO_COM,        PIN_ATTR_NONE,                                     No_ADC_Channel, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_NONE }, // USB/DM
   { PORTA, 25, PIO_COM,        PIN_ATTR_NONE,                                     No_ADC_Channel, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_NONE }, // USB/DP
+  { NOT_A_PORT, 0, PIO_NOT_A_PIN, PIN_ATTR_NONE,                                  No_ADC_Channel, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_NONE }, // USB Host enable 
 } ;
 
 const void* g_apTCInstances[TCC_INST_NUM+TC_INST_NUM]={ TCC0, TCC1, TCC2, TC3, TC4, TC5, TC6, TC7 } ;

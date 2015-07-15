@@ -50,7 +50,7 @@ extern "C"
  *----------------------------------------------------------------------------*/
 
 // Number of pins defined in PinDescription array
-#define PINS_COUNT           (49u)
+#define PINS_COUNT           (50u)
 #define NUM_DIGITAL_PINS     (16u)
 #define NUM_ANALOG_INPUTS    (15u)
 #define NUM_ANALOG_OUTPUTS   (1u)
@@ -158,7 +158,7 @@ static const uint8_t SS_2 = (20u)
 /*
  * USB
  */
-#define PIN_USB_HOST_ENABLE (-1) // Won't compile without
+#define PIN_USB_HOST_ENABLE (49ul) // Defined as not a pin
 #define PIN_USB_DM          (47ul)
 #define PIN_USB_DP          (48ul)
 
