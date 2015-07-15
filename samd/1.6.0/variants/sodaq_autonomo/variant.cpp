@@ -39,7 +39,7 @@ const PinDescription g_APinDescription[]=
   // ----------------------
   // 0..1 - SERCOM/UART (Serial)
   { PORTA, 9,  PIO_SERCOM,     (PIN_ATTR_DIGITAL),                                 No_ADC_Channel, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_9  }, // RX, D0
-  { PORTA, 10, PIO_SERCOM,     (PIN_ATTR_DIGITAL),	                               No_ADC_Channel, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_10 }, // TX, D1
+  { PORTA, 10, PIO_SERCOM,     (PIN_ATTR_DIGITAL),                                 No_ADC_Channel, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_10 }, // TX, D1
 
   // 2..15 Digital
   { PORTA, 11, PIO_TIMER,      (PIN_ATTR_DIGITAL | PIN_ATTR_PWM | PIN_ATTR_TIMER), No_ADC_Channel, PWM1_CH1,   TCC1_CH1,     EXTERNAL_INT_11 }, // D2

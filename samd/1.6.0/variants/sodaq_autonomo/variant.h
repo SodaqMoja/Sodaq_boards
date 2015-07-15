@@ -24,10 +24,10 @@
  *----------------------------------------------------------------------------*/
 
 /** Frequency of the board main oscillator */
-#define VARIANT_MAINOSC		(32768ul)
+#define VARIANT_MAINOSC       (32768ul)
 
 /** Master clock frequency */
-#define VARIANT_MCK			  (48000000ul)
+#define VARIANT_MCK           (48000000ul)
 
 /*----------------------------------------------------------------------------
  *        Headers
@@ -112,7 +112,7 @@ static const uint8_t A10 = PIN_A10 ;
 static const uint8_t A11 = PIN_A11 ;
 static const uint8_t A12 = PIN_A12 ;
 static const uint8_t A13 = PIN_A13 ;
-#define ADC_RESOLUTION		12
+#define ADC_RESOLUTION      12
 
 /*
  * Serial interfaces
@@ -169,9 +169,9 @@ static const uint8_t SCK  = PIN_SPI_SCK ;
 
 #ifdef __cplusplus
 
-/*	=========================
- *	===== SERCOM DEFINITION
- *	=========================
+/*  =========================
+ *  ===== SERCOM DEFINITION
+ *  =========================
 */
 extern SERCOM sercom0;
 extern SERCOM sercom1;
