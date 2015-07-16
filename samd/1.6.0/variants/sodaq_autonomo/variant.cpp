@@ -83,7 +83,7 @@ const PinDescription g_APinDescription[]=
   
   // 36-38 Other Analog + DAC
   { PORTB,  0, PIO_ANALOG,     PIN_ATTR_ANALOG,                                   ADC_Channel8,   NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_NONE  }, // ADC/AIN[8], BATVOLT
-  { PORTA,  3, PIO_ANALOG,     PIN_ATTR_ANALOG,                                   ADC_Channel1,   NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_NONE  }, // ADC/AIN[1], AREF
+  { PORTA,  3, PIO_ANALOG,     PIN_ATTR_ANALOG,                                   No_ADC_Channel, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_NONE  }, // ADC/AIN[1], AREF
   { PORTA,  2, PIO_ANALOG,     PIN_ATTR_ANALOG,                                   DAC_Channel0,   NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_2     }, // DAC
 
   // 39..40 - SERCOM/UART (Serial1)
