@@ -147,6 +147,18 @@ static const uint8_t SCK  = PIN_SPI_SCK ;
 // SD Card CS/SS pin
 static const uint8_t SS_2 = (20u);
 
+// Other Digital Pins
+static const uint8_t VCC_SW  = (16u);
+static const uint8_t BEE_VCC = (17u);
+static const uint8_t DTR     = (18u);
+static const uint8_t CTS     = (19u);
+static const uint8_t RI_AS   = (21u);
+
+// Other Analog Pins
+static const uint8_t BAT_VOLT = (36u);
+static const uint8_t AREF     = (37u);
+static const uint8_t DAC_PIN  = (38u);
+
 /*
  * Wire Interfaces
  */
