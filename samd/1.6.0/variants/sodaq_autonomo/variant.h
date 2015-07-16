@@ -157,7 +157,7 @@ static const uint8_t RI_AS   = (21u);
 // Other Analog Pins
 static const uint8_t BAT_VOLT = (36u);
 static const uint8_t AREF     = (37u);
-static const uint8_t DAC_PIN  = (38u);
+static const uint8_t DAC0     = PIN_A10;
 
 /*
  * Wire Interfaces
