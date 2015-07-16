@@ -77,9 +77,9 @@ const PinDescription g_APinDescription[]=
   { PORTB,  5, PIO_ANALOG,     PIN_ATTR_ANALOG,                                    ADC_Channel13,  NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_5  }, // ADC/AIN[13], A8
   { PORTB,  4, PIO_ANALOG,     PIN_ATTR_ANALOG,                                    ADC_Channel12,  NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_4  }, // ADC/AIN[12], A9
   { PORTA,  2, PIO_ANALOG,     PIN_ATTR_ANALOG,                                    ADC_Channel0,   NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_2  }, // ADC/AIN[0],  A10
-  { PORTB,  3, PIO_ANALOG,     PIN_ATTR_ANALOG,                                    ADC_Channel11,  NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_3  }, // ADC/AIN[14], A11
-  { PORTB,  2, PIO_ANALOG,     PIN_ATTR_ANALOG,                                    ADC_Channel10,  NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_2  }, // ADC/AIN[14], A12
-  { PORTB,  1, PIO_ANALOG,     PIN_ATTR_ANALOG,                                    ADC_Channel9,   NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_1  }, // ADC/AIN[14], A13
+  { PORTB,  3, PIO_ANALOG,     PIN_ATTR_ANALOG,                                    ADC_Channel11,  NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_3  }, // ADC/AIN[11], A11
+  { PORTB,  2, PIO_ANALOG,     PIN_ATTR_ANALOG,                                    ADC_Channel10,  NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_2  }, // ADC/AIN[10], A12
+  { PORTB,  1, PIO_ANALOG,     PIN_ATTR_ANALOG,                                    ADC_Channel9,   NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_1  }, // ADC/AIN[9], A13
   
   // 36-38 Other Analog + DAC
   { PORTB,  0, PIO_ANALOG,     PIN_ATTR_ANALOG,                                   ADC_Channel8,   NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_NONE  }, // ADC/AIN[8], BATVOLT
