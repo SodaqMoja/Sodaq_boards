@@ -342,9 +342,9 @@ void TwoWire::onService(void)
 }*/
 
 
-TwoWire Wire(&sercom3);
+TwoWire Wire(&sercom2);
 
-void SERCOM3_Handler(void) {
+void SERCOM2_Handler(void) {
   Wire.onService();
 }
 
