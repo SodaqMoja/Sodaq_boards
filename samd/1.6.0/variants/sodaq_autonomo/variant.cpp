@@ -91,8 +91,8 @@ const PinDescription g_APinDescription[]=
   { PORTB, 31, PIO_SERCOM_ALT, (PIN_ATTR_DIGITAL),                                No_ADC_Channel, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_15 }, // TX: SERCOM5/PAD[1]
 
   // 41..42 - I2C pins (SDA/SCL)
-  { PORTA, 12, PIO_SERCOM,     PIN_ATTR_DIGITAL,                                  No_ADC_Channel, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_12 }, // SDA: SERCOM2/PAD[0]
-  { PORTA, 13, PIO_SERCOM,     PIN_ATTR_DIGITAL,                                  No_ADC_Channel, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_13 }, // SCL: SERCOM2/PAD[1]
+  { PORTA, 12, PIO_SERCOM_ALT,     PIN_ATTR_DIGITAL,                                  No_ADC_Channel, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_12 }, // SDA: SERCOM2/PAD[0]
+  { PORTA, 13, PIO_SERCOM_ALT,     PIN_ATTR_DIGITAL,                                  No_ADC_Channel, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_13 }, // SCL: SERCOM2/PAD[1]
 
   // 43 - SS (dataflash AT45DB161E)
   { PORTA, 23, PIO_SERCOM,     PIN_ATTR_DIGITAL,                                  No_ADC_Channel, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_7  }, // SS: SERCOM3/PAD[1]},
