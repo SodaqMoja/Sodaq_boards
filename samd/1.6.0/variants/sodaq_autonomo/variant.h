@@ -197,8 +197,8 @@ extern SERCOM sercom5;
 extern Uart Serial1;
 extern Uart Serial2;
 
-// Temporary Alias
-#define Serial SerialUSB
+// Temporary Alias?
+#define Serial Serial1
 
 #endif
 
