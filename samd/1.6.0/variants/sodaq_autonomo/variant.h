@@ -117,17 +117,17 @@ static const uint8_t A13 = PIN_A13 ;
 /*
  * Serial interfaces
  */
-// Serial1
-#define PIN_SERIAL1_RX       (0ul)
-#define PIN_SERIAL1_TX       (1ul)
-#define PAD_SERIAL1_TX       (UART_TX_PAD_2)
-#define PAD_SERIAL1_RX       (SERCOM_RX_PAD_1)
+// Serial
+#define PIN_SERIAL_RX       (0ul)
+#define PIN_SERIAL_TX       (1ul)
+#define PAD_SERIAL_TX       (UART_TX_PAD_2)
+#define PAD_SERIAL_RX       (SERCOM_RX_PAD_1)
 
-// Serial2
-#define PIN_SERIAL2_RX       (40ul)
-#define PIN_SERIAL2_TX       (39ul)
-#define PAD_SERIAL2_TX       (UART_TX_PAD_0)
-#define PAD_SERIAL2_RX       (SERCOM_RX_PAD_1)
+// Serial1
+#define PIN_SERIAL1_RX       (40ul)
+#define PIN_SERIAL1_TX       (39ul)
+#define PAD_SERIAL1_TX       (UART_TX_PAD_0)
+#define PAD_SERIAL1_RX       (SERCOM_RX_PAD_1)
 
 /*
  * SPI Interfaces
@@ -194,11 +194,8 @@ extern SERCOM sercom3;
 extern SERCOM sercom4;
 extern SERCOM sercom5;
 
+extern Uart Serial;
 extern Uart Serial1;
-extern Uart Serial2;
-
-// Temporary Alias?
-#define Serial Serial1
 
 #endif
 
@@ -221,11 +218,11 @@ extern Uart Serial2;
 //#define SERIAL_PORT_MONITOR         Serial
 
 // Serial has no physical pins broken out, so it's not listed as HARDWARE port
-#define SERIAL_PORT_HARDWARE        Serial1
-#define SERIAL_PORT_HARDWARE_OPEN   Serial1
+#define SERIAL_PORT_HARDWARE        Serial
+#define SERIAL_PORT_HARDWARE_OPEN   Serial
 
-#define SERIAL_PORT_HARDWARE1       Serial2
-#define SERIAL_PORT_HARDWARE_OPEN1  Serial2
+#define SERIAL_PORT_HARDWARE1       Serial1
+#define SERIAL_PORT_HARDWARE_OPEN1  Serial1
 
 #endif /* _VARIANT_SODAQ_AUTONOMO */
 
