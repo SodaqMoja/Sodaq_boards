@@ -83,7 +83,7 @@ extern "C"
 /*
  * Analog pins
  */
-#define PIN_A0               (22ul)
+#define PIN_A0               (19ul)
 #define PIN_A1               (PIN_A0 + 1)
 #define PIN_A2               (PIN_A0 + 2)
 #define PIN_A3               (PIN_A0 + 3)
@@ -124,40 +124,45 @@ static const uint8_t A13 = PIN_A13 ;
 #define PAD_SERIAL_RX       (SERCOM_RX_PAD_1)
 
 // Serial1
-#define PIN_SERIAL1_RX       (40ul)
-#define PIN_SERIAL1_TX       (39ul)
-#define PAD_SERIAL1_TX       (UART_TX_PAD_0)
+#define PIN_SERIAL1_RX       (37ul)
+#define PIN_SERIAL1_TX       (36ul)
+#define PAD_SERIAL1_TX       (UART_TX_RTS_CTS_PAD_0_2_3)
 #define PAD_SERIAL1_RX       (SERCOM_RX_PAD_1)
+
+// Other Bee socket pins
+static const uint8_t RTS = (39u);
+static const uint8_t CTS = (40u);
+
+static const uint8_t DTR = PIN_A13;
+static const uint8_t RI_AS = (18u);
+
 
 /*
  * SPI Interfaces
  */
 #define SPI_INTERFACES_COUNT 1
 
-#define PIN_SPI_SS           (43u)
-#define PIN_SPI_MISO         (44u)
-#define PIN_SPI_MOSI         (46u)
-#define PIN_SPI_SCK          (45u)
+#define PIN_SPI_MISO         (43u)
+#define PIN_SPI_SS           (44u)
+#define PIN_SPI_MOSI         (45u)
+#define PIN_SPI_SCK          (46u)
 
+static const uint8_t MISO = PIN_SPI_MISO;
 static const uint8_t SS	  = PIN_SPI_SS ;
 static const uint8_t MOSI = PIN_SPI_MOSI ;
-static const uint8_t MISO = PIN_SPI_MISO ;
 static const uint8_t SCK  = PIN_SPI_SCK ;
 
 // SD Card CS/SS pin
-static const uint8_t SS_2 = (20u);
+static const uint8_t SS_2 = (47u);
 
 // Other Digital Pins
 static const uint8_t VCC_SW  = (16u);
 static const uint8_t BEE_VCC = (17u);
-static const uint8_t DTR     = (18u);
-static const uint8_t CTS     = (19u);
-static const uint8_t RI_AS   = (21u);
 
 // Other Analog Pins
-static const uint8_t BAT_VOLT = (36u);
-static const uint8_t AREF     = (37u);
-static const uint8_t DAC0     = PIN_A10;
+static const uint8_t BAT_VOLT = (33u);
+static const uint8_t AREF     = (34u);
+static const uint8_t DAC0     = PIN_A0; // or (35u) implications for cores/arduino/wiring_analog.c analogWrite()
 
 /*
  * Wire Interfaces
@@ -170,8 +175,8 @@ static const uint8_t DAC0     = PIN_A10;
 /*
  * USB
  */
-#define PIN_USB_DM          (47ul)
-#define PIN_USB_DP          (48ul)
+#define PIN_USB_DM          (48ul)
+#define PIN_USB_DP          (49ul)
 
 #ifdef __cplusplus
 }
