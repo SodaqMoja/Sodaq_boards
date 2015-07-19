@@ -27,6 +27,8 @@
 #include "USBDesc.h"
 #include "USBAPI.h"
 
+#define mymin(a,b) ((a)<(b)?(a):(b))
+
 //#define TRACE_CORE(x)	x
 #define TRACE_CORE(x)
 
@@ -95,7 +97,7 @@ uint32_t USBD_Recv(uint32_t ep, void* d, uint32_t len)
 	uint8_t *buffer;
 	uint8_t *data = (uint8_t *)d;
 
-	len = min(UDD_FifoByteCount(ep), len);
+	len = mymin(UDD_FifoByteCount(ep), len);
 
 	UDD_Recv_data(ep, len);
 	UDD_Recv(ep, &buffer);
