@@ -84,26 +84,26 @@ const PinDescription g_APinDescription[]=
   { PORTA,  3, PIO_ANALOG,     PIN_ATTR_ANALOG,                                   No_ADC_Channel, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_NONE  }, // ADC/AIN[1], AREF
   { PORTA,  2, PIO_ANALOG,     PIN_ATTR_ANALOG,                                   DAC_Channel0,   NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_2     }, // DAC
 
-  // 36..40 - SERCOM/UART (Serial1)
+  // 36..39 - SERCOM/UART (Serial1)
   { PORTB, 30, PIO_SERCOM_ALT, PIN_ATTR_DIGITAL,                                  No_ADC_Channel, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_14 }, // TX: SERCOM5/PAD[0]
   { PORTB, 31, PIO_SERCOM_ALT, PIN_ATTR_DIGITAL,                                  No_ADC_Channel, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_15 }, // RX: SERCOM5/PAD[1]
   { PORTB, 22, PIO_SERCOM_ALT, PIN_ATTR_DIGITAL,                                  No_ADC_Channel, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_6  }, // RTS: SERCOM5/PAD[2]
   { PORTB, 23, PIO_SERCOM_ALT, PIN_ATTR_DIGITAL,                                  No_ADC_Channel, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_7  }, // CTS: SERCOM5/PAD[3]
 
-  // 41..42 - I2C pins (SDA/SCL)
+  // 40..41 - I2C pins (SDA/SCL)
   { PORTA, 12, PIO_SERCOM,     PIN_ATTR_DIGITAL,                                  No_ADC_Channel, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_12 }, // SDA: SERCOM2/PAD[0]
   { PORTA, 13, PIO_SERCOM,     PIN_ATTR_DIGITAL,                                  No_ADC_Channel, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_13 }, // SCL: SERCOM2/PAD[1]
 
-  // 43..46 - SPI pins (ICSP: MISO, SS, MOSI, SCK)
+  // 42..45 - SPI pins (ICSP: MISO, SS, MOSI, SCK)
   { PORTA, 22, PIO_SERCOM,     PIN_ATTR_DIGITAL,                                  No_ADC_Channel, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_6  }, // MISO: SERCOM3/PAD[0]
   { PORTA, 23, PIO_SERCOM,     PIN_ATTR_DIGITAL,                                  No_ADC_Channel, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_7  }, // SS: SERCOM3/PAD[1]},
   { PORTA, 20, PIO_SERCOM_ALT, PIN_ATTR_DIGITAL,                                  No_ADC_Channel, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_4  }, // MOSI: SERCOM3/PAD[2]
   { PORTA, 21, PIO_SERCOM_ALT, PIN_ATTR_DIGITAL,                                  No_ADC_Channel, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_5  }, // SCK: SERCOM3/PAD[3]
 
-  // 47 - SD CARD CS
+  // 46 - SD CARD CS
   { PORTA, 27, PIO_OUTPUT,     PIN_ATTR_DIGITAL,                                  No_ADC_Channel, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_NONE }, // SS_2 (CS for SD)
     
-  // 48..49 - USB
+  // 47..48 - USB
   { PORTA, 24, PIO_COM,        PIN_ATTR_NONE,                                     No_ADC_Channel, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_NONE }, // USB/DM
   { PORTA, 25, PIO_COM,        PIN_ATTR_NONE,                                     No_ADC_Channel, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_NONE }, // USB/DP
 } ;

@@ -50,7 +50,7 @@ extern "C"
  *----------------------------------------------------------------------------*/
 
 // Number of pins defined in PinDescription array
-#define PINS_COUNT           (50u)
+#define PINS_COUNT           (49u)
 #define NUM_DIGITAL_PINS     (16u)
 #define NUM_ANALOG_INPUTS    (15u)
 #define NUM_ANALOG_OUTPUTS   (1u)
@@ -130,22 +130,21 @@ static const uint8_t A13 = PIN_A13 ;
 #define PAD_SERIAL1_RX       (SERCOM_RX_PAD_1)
 
 // Other Bee socket pins
-static const uint8_t RTS = (39u);
-static const uint8_t CTS = (40u);
+static const uint8_t RTS = (38u);
+static const uint8_t CTS = (39u);
 
 static const uint8_t DTR = PIN_A13;
 static const uint8_t RI_AS = (18u);
-
 
 /*
  * SPI Interfaces
  */
 #define SPI_INTERFACES_COUNT 1
 
-#define PIN_SPI_MISO         (43u)
-#define PIN_SPI_SS           (44u)
-#define PIN_SPI_MOSI         (45u)
-#define PIN_SPI_SCK          (46u)
+#define PIN_SPI_MISO         (42u)
+#define PIN_SPI_SS           (43u)
+#define PIN_SPI_MOSI         (44u)
+#define PIN_SPI_SCK          (45u)
 
 static const uint8_t MISO = PIN_SPI_MISO;
 static const uint8_t SS	  = PIN_SPI_SS ;
@@ -153,7 +152,7 @@ static const uint8_t MOSI = PIN_SPI_MOSI ;
 static const uint8_t SCK  = PIN_SPI_SCK ;
 
 // SD Card CS/SS pin
-static const uint8_t SS_2 = (47u);
+static const uint8_t SS_2 = (46u);
 
 // Other Digital Pins
 static const uint8_t VCC_SW  = (16u);
@@ -169,14 +168,14 @@ static const uint8_t DAC0     = PIN_A0; // or (35u) implications for cores/ardui
  */
 #define WIRE_INTERFACES_COUNT 1
 
-#define PIN_WIRE_SDA         (41u)
-#define PIN_WIRE_SCL         (42u)
+#define PIN_WIRE_SDA         (40u)
+#define PIN_WIRE_SCL         (41u)
 
 /*
  * USB
  */
-#define PIN_USB_DM          (48ul)
-#define PIN_USB_DP          (49ul)
+#define PIN_USB_DM          (47ul)
+#define PIN_USB_DP          (48ul)
 
 #ifdef __cplusplus
 }
