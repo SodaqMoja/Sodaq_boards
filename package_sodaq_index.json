@@ -76,8 +76,8 @@
                "category":"Contributed",
                "url":"http://downloads.sodaq.net/sodaqsamdboards-1.6.0.tar.bz2",
                "archiveFileName":"sodaqsamdboards-1.6.0.tar.bz2",
-               "checksum":"SHA-256:8d4d7a3a4c7eb0462ef42b606c000d8ce19fd09bc785acf36895810f8c58cd70",
-               "size":"175629",
+               "checksum":"SHA-256:5929f588e21920d705e8eb79822049b76794d6f7898c4088c489d3890730c2eb",
+               "size":"175674",
                "help":{
                   "online":"https://forums.sodaq.com"
                },

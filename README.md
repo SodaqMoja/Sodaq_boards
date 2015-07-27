@@ -11,3 +11,8 @@ In this package we have the following boards
 * SODAQ Ndogo
 * SODAQ Tatu
 * SODAQ Moja (obsolete, just added for completeness)
+
+# Directory Structure
+
+There are two major directory trees. One for AVR boards and one for SAMD
+boards.  Each have their own versioning scheme.
