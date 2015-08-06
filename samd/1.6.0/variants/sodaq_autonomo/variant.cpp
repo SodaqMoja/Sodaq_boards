@@ -30,7 +30,7 @@
  * Pins descriptions for SODAQ Autonomo
  *
  *  0..15 digital
- * 16..31 analog, A0..A15
+ * 19..32 analog, A0..A15
  */
 const PinDescription g_APinDescription[]=
 { 
@@ -96,12 +96,12 @@ const PinDescription g_APinDescription[]=
 
   // 42..45 - SPI pins (ICSP: MISO, SS, MOSI, SCK)
   { PORTA, 22, PIO_SERCOM,     PIN_ATTR_DIGITAL,                                  No_ADC_Channel, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_6  }, // MISO: SERCOM3/PAD[0]
-  { PORTA, 23, PIO_SERCOM,     PIN_ATTR_DIGITAL,                                  No_ADC_Channel, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_7  }, // SS: SERCOM3/PAD[1]},
+  { PORTA, 23, PIO_SERCOM,     PIN_ATTR_DIGITAL,                                  No_ADC_Channel, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_7  }, // SS: SERCOM3/PAD[1], CS_DF
   { PORTA, 20, PIO_SERCOM_ALT, PIN_ATTR_DIGITAL,                                  No_ADC_Channel, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_4  }, // MOSI: SERCOM3/PAD[2]
   { PORTA, 21, PIO_SERCOM_ALT, PIN_ATTR_DIGITAL,                                  No_ADC_Channel, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_5  }, // SCK: SERCOM3/PAD[3]
 
   // 46 - SD CARD CS
-  { PORTA, 27, PIO_OUTPUT,     PIN_ATTR_DIGITAL,                                  No_ADC_Channel, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_NONE }, // SS_2 (CS for SD)
+  { PORTA, 27, PIO_OUTPUT,     PIN_ATTR_DIGITAL,                                  No_ADC_Channel, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_NONE }, // CS_SD
     
   // 47..48 - USB
   { PORTA, 24, PIO_COM,        PIN_ATTR_NONE,                                     No_ADC_Channel, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_NONE }, // USB/DM
