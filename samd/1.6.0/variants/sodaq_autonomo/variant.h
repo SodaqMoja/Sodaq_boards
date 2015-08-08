@@ -153,7 +153,7 @@ static const uint8_t SCK  = PIN_SPI_SCK ;
 
 // CS pins for SD and DataFlash
 static const uint8_t CS_SD = (46u);
-static const uint8_t CS_DF = SS;
+static const uint8_t CS_DF = PIN_SPI_SS;
 
 // Other Digital Pins
 static const uint8_t VCC_SW  = (16u);
