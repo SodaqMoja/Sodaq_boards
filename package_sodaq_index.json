@@ -106,6 +106,44 @@
                      "version": "4.0.0-atmel"
                   }
                ]
+            },
+            {
+               "name":"SODAQ SAMD Boards",
+               "architecture":"samd",
+               "version":"1.6.1",
+               "category":"Contributed",
+               "url":"http://downloads.sodaq.net/sodaqsamdboards-1.6.1.tar.bz2",
+               "archiveFileName":"sodaqsamdboards-1.6.1.tar.bz2",
+               "checksum":"SHA-256:21a09831fcecdcd9da40ec705ca9696a4dafc1530fd45b279fa4acb7965edba4",
+               "size":"175107",
+               "help":{
+                  "online":"https://forums.sodaq.com"
+               },
+               "boards":[
+                  { "name":"SODAQ Autonomo" }
+               ],
+               "toolsDependencies":[
+                  {
+                     "packager": "arduino",
+                     "name": "arm-none-eabi-gcc",
+                     "version": "4.8.3-2014q1"
+                  },
+                  {
+                     "packager": "arduino",
+                     "name": "bossac",
+                     "version": "1.6-arduino"
+                  },
+                  {
+                     "packager": "arduino",
+                     "name": "openocd",
+                     "version": "0.9.0-arduino"
+                  },
+                  {
+                     "packager": "arduino",
+                     "name": "CMSIS",
+                     "version": "4.0.0-atmel"
+                  }
+               ]
             }
          ],
       "tools": [
@@ -174,108 +212,6 @@
               "archiveFileName": "bossac-1.3a-arduino-i386-apple-darwin11.tar.bz2",
               "checksum": "SHA-256:40770b225753e7a52bb165e8f37e6b760364f5c5e96048168d0178945bd96ad6",
               "size": "39475"
-            }
-          ]
-        },
-        {
-          "name": "bossac",
-          "version": "1.5-arduino",
-          "systems": [
-            {
-              "host": "i686-mingw32",
-              "url": "http://downloads.arduino.cc/bossac-1.5-arduino2-mingw32.tar.gz",
-              "archiveFileName": "bossac-1.5-arduino2-mingw32.tar.gz",
-              "checksum": "SHA-256:9d849a34f0b26c25c6a8c4d741cd749dea238cade73b57a3048f248c431d9cc9",
-              "size": "222283"
-            },
-            {
-              "host": "x86_64-apple-darwin",
-              "url": "http://downloads.arduino.cc/bossac-1.5-arduino2-i386-apple-darwin14.3.0.tar.gz",
-              "archiveFileName": "bossac-1.5-arduino2-i386-apple-darwin14.3.0.tar.gz",
-              "checksum": "SHA-256:8f07e50a1f887cb254092034c6a4482d73209568cd83cb624d6625d66794f607",
-              "size": "64120"
-            },
-            {
-              "host": "x86_64-pc-linux-gnu",
-              "url": "http://downloads.arduino.cc/bossac-1.5-arduino2-x86_64-linux-gnu.tar.gz",
-              "archiveFileName": "bossac-1.5-arduino2-x86_64-linux-gnu.tar.gz",
-              "checksum": "SHA-256:42785329155dcb39872d4d30a2a9d31e0f0ce3ae7e34a3ed3d840cbc909c4657",
-              "size": "30431"
-            },
-            {
-              "host": "i686-pc-linux-gnu",
-              "url": "http://downloads.arduino.cc/bossac-1.5-arduino2-i486-linux-gnu.tar.gz",
-              "archiveFileName": "bossac-1.5-arduino2-i486-linux-gnu.tar.gz",
-              "checksum": "SHA-256:ac56e553bbd6d992fa5592ace90996806230ab582f2bf9f8590836fec9dabef6",
-              "size": "29783"
-            }
-          ]
-        },
-        {
-          "name": "CMSIS",
-          "version": "4.0.0-atmel",
-          "systems": [
-            {
-              "host": "i686-mingw32",
-              "url": "http://downloads.arduino.cc/CMSIS-4.0.0.tar.bz2",
-              "archiveFileName": "CMSIS-4.0.0.tar.bz2",
-              "checksum": "SHA-256:7d637d2d7a0c6bacc22065848a201db2fff124268e4a56868260d0f472b4bbb7",
-              "size": "17642623"
-            },
-            {
-              "host": "x86_64-apple-darwin",
-              "url": "http://downloads.arduino.cc/CMSIS-4.0.0.tar.bz2",
-              "archiveFileName": "CMSIS-4.0.0.tar.bz2",
-              "checksum": "SHA-256:7d637d2d7a0c6bacc22065848a201db2fff124268e4a56868260d0f472b4bbb7",
-              "size": "17642623"
-            },
-            {
-              "host": "x86_64-pc-linux-gnu",
-              "url": "http://downloads.arduino.cc/CMSIS-4.0.0.tar.bz2",
-              "archiveFileName": "CMSIS-4.0.0.tar.bz2",
-              "checksum": "SHA-256:7d637d2d7a0c6bacc22065848a201db2fff124268e4a56868260d0f472b4bbb7",
-              "size": "17642623"
-            },
-            {
-              "host": "i686-pc-linux-gnu",
-              "url": "http://downloads.arduino.cc/CMSIS-4.0.0.tar.bz2",
-              "archiveFileName": "CMSIS-4.0.0.tar.bz2",
-              "checksum": "SHA-256:7d637d2d7a0c6bacc22065848a201db2fff124268e4a56868260d0f472b4bbb7",
-              "size": "17642623"
-            }
-          ]
-        },
-        {
-          "name": "openocd",
-          "version": "0.9.0-arduino",
-          "systems": [
-            {
-              "host": "i686-mingw32",
-              "url": "http://downloads.arduino.cc/tools/OpenOCD-0.9.0-arduino-i686-pc-cygwin.tar.bz2",
-              "archiveFileName": "OpenOCD-0.9.0-arduino-i686-pc-cygwin.tar.bz2",
-              "checksum": "SHA-256:5310bdd3730168a33b09b68558e908ca8b2fec25620c488f50a5fb35d0d1effd",
-              "size": "2360705"
-            },
-            {
-              "host": "x86_64-apple-darwin",
-              "url": "http://downloads.arduino.cc/tools/OpenOCD-0.9.0-arduino-x86_64-apple-darwin14.3.0.tar.bz2",
-              "archiveFileName": "OpenOCD-0.9.0-arduino-x86_64-apple-darwin14.3.0.tar.bz2",
-              "checksum": "SHA-256:ef90769c07b8018cec3a5054e690ac6c196e03720e102ac5038c3f9da4e44782",
-              "size": "2275101"
-            },
-            {
-              "host": "x86_64-pc-linux-gnu",
-              "url": "http://downloads.arduino.cc/tools/OpenOCD-0.9.0-arduino-x86_64-linux-gnu.tar.bz2",
-              "archiveFileName": "OpenOCD-0.9.0-arduino-x86_64-linux-gnu.tar.bz2",
-              "checksum": "SHA-256:c350409f7badf213dfcc516ea34289461ad92d87806e8e33945508a2c6b2c0b3",
-              "size": "1210796"
-            },
-            {
-              "host": "i686-pc-linux-gnu",
-              "url": "http://downloads.arduino.cc/tools/OpenOCD-0.9.0-arduino-i486-linux-gnu.tar.bz2",
-              "archiveFileName": "OpenOCD-0.9.0-arduino-i486-linux-gnu.tar.bz2",
-              "checksum": "SHA-256:4c9793dfd7822b0fc959d039e5ecabfa89092ee2911abfdc7b5905deb171499a",
-              "size": "1129654"
             }
           ]
         },
@@ -480,6 +416,142 @@
               "host": "i686-mingw32",
               "archiveFileName": "avrdude-6.0.1-arduino5-i686-mingw32.zip",
               "url": "http://downloads.arduino.cc/tools/avrdude-6.0.1-arduino5-i686-mingw32.zip"
+            }
+          ]
+        },
+        {
+          "name": "bossac",
+          "version": "1.5-arduino",
+          "systems": [
+            {
+              "host": "i686-mingw32",
+              "url": "http://downloads.arduino.cc/bossac-1.5-arduino2-mingw32.tar.gz",
+              "archiveFileName": "bossac-1.5-arduino2-mingw32.tar.gz",
+              "checksum": "SHA-256:9d849a34f0b26c25c6a8c4d741cd749dea238cade73b57a3048f248c431d9cc9",
+              "size": "222283"
+            },
+            {
+              "host": "x86_64-apple-darwin",
+              "url": "http://downloads.arduino.cc/bossac-1.5-arduino2-i386-apple-darwin14.3.0.tar.gz",
+              "archiveFileName": "bossac-1.5-arduino2-i386-apple-darwin14.3.0.tar.gz",
+              "checksum": "SHA-256:8f07e50a1f887cb254092034c6a4482d73209568cd83cb624d6625d66794f607",
+              "size": "64120"
+            },
+            {
+              "host": "x86_64-pc-linux-gnu",
+              "url": "http://downloads.arduino.cc/bossac-1.5-arduino2-x86_64-linux-gnu.tar.gz",
+              "archiveFileName": "bossac-1.5-arduino2-x86_64-linux-gnu.tar.gz",
+              "checksum": "SHA-256:42785329155dcb39872d4d30a2a9d31e0f0ce3ae7e34a3ed3d840cbc909c4657",
+              "size": "30431"
+            },
+            {
+              "host": "i686-pc-linux-gnu",
+              "url": "http://downloads.arduino.cc/bossac-1.5-arduino2-i486-linux-gnu.tar.gz",
+              "archiveFileName": "bossac-1.5-arduino2-i486-linux-gnu.tar.gz",
+              "checksum": "SHA-256:ac56e553bbd6d992fa5592ace90996806230ab582f2bf9f8590836fec9dabef6",
+              "size": "29783"
+            }
+          ]
+        },
+        {
+          "name": "bossac",
+          "version": "1.6-arduino",
+          "systems": [
+            {
+              "host": "i686-mingw32",
+              "url": "http://downloads.arduino.cc/tools/bossac-1.6-arduino-mingw32.tar.gz",
+              "archiveFileName": "bossac-1.6-arduino-mingw32.tar.gz",
+              "checksum": "SHA-256:b59d64d3f7a43c894d0fba2dd1241bbaeefedf8c902130a24d8ec63b08f9ff6a",
+              "size": "222517"
+            },
+            {
+              "host": "x86_64-apple-darwin",
+              "url": "http://downloads.arduino.cc/tools/bossac-1.6-arduino-i386-apple-darwin14.4.0.tar.gz",
+              "archiveFileName": "bossac-1.6-arduino-i386-apple-darwin14.4.0.tar.gz",
+              "checksum": "SHA-256:6b3b686a782b6587c64c85db80085c9089c5ea1b051e49e5af17b3c6109c8efa",
+              "size": "64538"
+            },
+            {
+              "host": "x86_64-pc-linux-gnu",
+              "url": "http://downloads.arduino.cc/tools/bossac-1.6-arduino-x86_64-linux-gnu.tar.gz",
+              "archiveFileName": "bossac-1.6-arduino-x86_64-linux-gnu.tar.gz",
+              "checksum": "SHA-256:2ce7a54d609b4ce3b678147202b2556dd1ce5b318de48a018c676521b994c7a7",
+              "size": "30649"
+            },
+            {
+              "host": "i686-pc-linux-gnu",
+              "url": "http://downloads.arduino.cc/tools/bossac-1.6-arduino-i486-linux-gnu.tar.gz",
+              "archiveFileName": "bossac-1.6-arduino-i486-linux-gnu.tar.gz",
+              "checksum": "SHA-256:5c320bf5cfdbf03e3f648642e6de325e459a061fcf96b2215cb955263f7467b2",
+              "size": "30072"
+            }
+          ]
+        },
+        {
+          "name": "openocd",
+          "version": "0.9.0-arduino",
+          "systems": [
+            {
+              "host": "i686-mingw32",
+              "url": "http://downloads.arduino.cc/tools/OpenOCD-0.9.0-arduino-i686-pc-cygwin.tar.bz2",
+              "archiveFileName": "OpenOCD-0.9.0-arduino-i686-pc-cygwin.tar.bz2",
+              "checksum": "SHA-256:5310bdd3730168a33b09b68558e908ca8b2fec25620c488f50a5fb35d0d1effd",
+              "size": "2360705"
+            },
+            {
+              "host": "x86_64-apple-darwin",
+              "url": "http://downloads.arduino.cc/tools/OpenOCD-0.9.0-arduino-x86_64-apple-darwin14.3.0.tar.bz2",
+              "archiveFileName": "OpenOCD-0.9.0-arduino-x86_64-apple-darwin14.3.0.tar.bz2",
+              "checksum": "SHA-256:ef90769c07b8018cec3a5054e690ac6c196e03720e102ac5038c3f9da4e44782",
+              "size": "2275101"
+            },
+            {
+              "host": "x86_64-pc-linux-gnu",
+              "url": "http://downloads.arduino.cc/tools/OpenOCD-0.9.0-arduino-x86_64-linux-gnu.tar.bz2",
+              "archiveFileName": "OpenOCD-0.9.0-arduino-x86_64-linux-gnu.tar.bz2",
+              "checksum": "SHA-256:c350409f7badf213dfcc516ea34289461ad92d87806e8e33945508a2c6b2c0b3",
+              "size": "1210796"
+            },
+            {
+              "host": "i686-pc-linux-gnu",
+              "url": "http://downloads.arduino.cc/tools/OpenOCD-0.9.0-arduino-i486-linux-gnu.tar.bz2",
+              "archiveFileName": "OpenOCD-0.9.0-arduino-i486-linux-gnu.tar.bz2",
+              "checksum": "SHA-256:4c9793dfd7822b0fc959d039e5ecabfa89092ee2911abfdc7b5905deb171499a",
+              "size": "1129654"
+            }
+          ]
+        },
+        {
+          "name": "CMSIS",
+          "version": "4.0.0-atmel",
+          "systems": [
+            {
+              "host": "i686-mingw32",
+              "url": "http://downloads.arduino.cc/CMSIS-4.0.0.tar.bz2",
+              "archiveFileName": "CMSIS-4.0.0.tar.bz2",
+              "checksum": "SHA-256:7d637d2d7a0c6bacc22065848a201db2fff124268e4a56868260d0f472b4bbb7",
+              "size": "17642623"
+            },
+            {
+              "host": "x86_64-apple-darwin",
+              "url": "http://downloads.arduino.cc/CMSIS-4.0.0.tar.bz2",
+              "archiveFileName": "CMSIS-4.0.0.tar.bz2",
+              "checksum": "SHA-256:7d637d2d7a0c6bacc22065848a201db2fff124268e4a56868260d0f472b4bbb7",
+              "size": "17642623"
+            },
+            {
+              "host": "x86_64-pc-linux-gnu",
+              "url": "http://downloads.arduino.cc/CMSIS-4.0.0.tar.bz2",
+              "archiveFileName": "CMSIS-4.0.0.tar.bz2",
+              "checksum": "SHA-256:7d637d2d7a0c6bacc22065848a201db2fff124268e4a56868260d0f472b4bbb7",
+              "size": "17642623"
+            },
+            {
+              "host": "i686-pc-linux-gnu",
+              "url": "http://downloads.arduino.cc/CMSIS-4.0.0.tar.bz2",
+              "archiveFileName": "CMSIS-4.0.0.tar.bz2",
+              "checksum": "SHA-256:7d637d2d7a0c6bacc22065848a201db2fff124268e4a56868260d0f472b4bbb7",
+              "size": "17642623"
             }
           ]
         }
