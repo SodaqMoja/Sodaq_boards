@@ -35,7 +35,7 @@ extern "C"{
 #define TRACE_DEVICE(x)
 
 __attribute__((__aligned__(4))) /*__attribute__((__section__(".bss_hram0")))*/ uint8_t udd_ep_out_cache_buffer[4][64];
-__attribute__((__aligned__(4))) /*__attribute__((__section__(".bss_hram0")))*/ uint8_t udd_ep_in_cache_buffer[4][128];
+__attribute__((__aligned__(4))) /*__attribute__((__section__(".bss_hram0")))*/ uint8_t udd_ep_in_cache_buffer[4][2048];
 
 /**
  * USB SRAM data containing pipe descriptor table
@@ -257,6 +257,9 @@ void UDD_ClearIN(void)
 uint32_t UDD_Send(uint32_t ep, const void* data, uint32_t len)
 {
 	memcpy(&udd_ep_in_cache_buffer[ep], data, len);
+	if (len > sizeof(udd_ep_in_cache_buffer[ep])) {
+                len = sizeof(udd_ep_in_cache_buffer[ep]);
+	}
 
 	/* Get endpoint configuration from setting register */
 	usb_endpoint_table[ep].DeviceDescBank[1].ADDR.reg = (uint32_t)&udd_ep_in_cache_buffer[ep];
