@@ -46,8 +46,8 @@
                "category":"Contributed",
                "url":"http://downloads.sodaq.net/sodaqboards-1.0.1.tar.bz2",
                "archiveFileName":"sodaqboards-1.0.1.tar.bz2",
-               "checksum":"SHA-256:320a7f814fe266b9f86d6eead7dfd7d0d5f12c661ea69583ef8737ce7905c1b4",
-               "size":"4972",
+               "checksum":"SHA-256:86225c298a2e4b14fa916e9bb239edef6f2c2762fff7fe8f776c7c06f713547c",
+               "size":"4961",
                "help":{
                   "online":"https://forums.sodaq.com"
                },
@@ -76,8 +76,8 @@
                "category":"Contributed",
                "url":"http://downloads.sodaq.net/sodaqsamdboards-1.6.0.tar.bz2",
                "archiveFileName":"sodaqsamdboards-1.6.0.tar.bz2",
-               "checksum":"SHA-256:5929f588e21920d705e8eb79822049b76794d6f7898c4088c489d3890730c2eb",
-               "size":"175674",
+               "checksum":"SHA-256:9d119bc54fa437d3fc7074459a006f4cc1f0792557a376f5433224b6dc9aa241",
+               "size":"175026",
                "help":{
                   "online":"https://forums.sodaq.com"
                },
