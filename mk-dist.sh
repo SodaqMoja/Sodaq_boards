@@ -19,5 +19,6 @@ doit()
 
 doit avr  1.0.0 sodaqboards
 doit avr  1.0.1 sodaqboards
+doit avr  1.0.2 sodaqboards
 doit samd 1.6.0 sodaqsamdboards
 doit samd 1.6.1 sodaqsamdboards
