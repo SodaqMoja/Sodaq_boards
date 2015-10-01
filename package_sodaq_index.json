@@ -180,7 +180,7 @@
                "architecture":"samd",
                "version":"1.6.2",
                "category":"Contributed",
-               "url":"http://downloads.sodaq.net/test/sodaqsamdboards-1.6.2.tar.bz2",
+               "url":"http://downloads.sodaq.net/sodaqsamdboards-1.6.2.tar.bz2",
                "archiveFileName":"sodaqsamdboards-1.6.2.tar.bz2",
                "checksum":"SHA-256:bff50c66960cffef6434be6f3b248b64fcc6dbcd54a71857b295e9cef21f86cc",
                "size":"176127",
