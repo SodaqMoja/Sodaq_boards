@@ -151,8 +151,9 @@ static const uint8_t SS	  = PIN_SPI_SS ;
 static const uint8_t MOSI = PIN_SPI_MOSI ;
 static const uint8_t SCK  = PIN_SPI_SCK ;
 
-// SD Card CS/SS pin
-static const uint8_t SS_2 = (46u);
+// CS pins for SD and DataFlash
+static const uint8_t CS_SD = (46u);
+static const uint8_t CS_DF = PIN_SPI_SS;
 
 // Other Digital Pins
 static const uint8_t VCC_SW  = (16u);
