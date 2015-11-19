@@ -12,7 +12,17 @@ In this package we have the following boards
 * SODAQ Tatu
 * SODAQ Moja (obsolete, just added for completeness)
 
-# Directory Structure
+The repository is mainly to manage the JSON file.  There are two extra
+repositories (see below) for a SAMD and AVR Core files.
 
-There are two major directory trees. One for AVR boards and one for SAMD
-boards.  Each have their own versioning scheme.
+# SodaqCore-samd
+
+The Core files for the SAMD boards is maintained in a separate GIT
+repository at
+`http://github.com/SodaqMoja/SodaqCore-samd.git`
+
+# SodaqCore-avr
+
+The Core files for the AVR boards is maintained in a separate GIT
+repository at
+`http://github.com/SodaqMoja/SodaqCore-avr.git`
