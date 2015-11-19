@@ -26,3 +26,13 @@ repository at
 The Core files for the AVR boards is maintained in a separate GIT
 repository at
 `http://github.com/SodaqMoja/SodaqCore-avr.git`
+
+# Release and Test
+
+Under normal circumstances you can find the latest released version of the
+JSON at
+`http://downloads.sodaq.net/package_sodaq_index.json`
+
+But if you want to use the latest and greatest you can grab the JSON file
+directly from GitHub at
+`https://raw.githubusercontent.com/SodaqMoja/Sodaq_boards/master/package_sodaq_index.json`
